@@ -44,3 +44,23 @@ function removeFromEnd() {
     myList.pop();
     renderList();
 }
+
+function insertAt() {
+    const value = itemInput.value.trim();
+    const index = parseInt(indexInput.value);
+
+    if (value && !isNaN(index)) {
+      myList.splice(index, 0, value);
+      itemInput.value = '';
+      renderList();
+    }
+}
+
+function removeAt() {
+  const index = parseInt(indexInput.value);
+  if (!isNaN(index) && index < myList.length) {
+      myList.splice(index, 1);
+      indexInput.value = '';
+    renderList();
+  }
+}
