@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart List Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Smart List Manager</h1>
+
+    <input id="itemInput" type="text" placeholder="Enter item" />
+    <button id="addStartBtn">Add to Start</button>
+    <button id="addEndBtn" onclick="addToEnd()">Add to End</button>
+    <button id="removeStartBtn">Remove from Start</button>
+    <button id="removeEndBtn">Remove from End</button>
+
+    <div class="advanced">
+      <input id="indexInput" type="number" placeholder="Index" />
+      <button id="insertAtBtn">Insert at Index</button>
+      <button id="removeAtBtn">Remove at Index</button>
+    </div>
+
+    <h2>📋 Current List</h2>
+    <ul id="listDisplay"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 2rem;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  input {
+    margin: 5px;
+    padding: 6px;
+    width: 150px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
+  
+  .advanced {
+    margin-top: 1rem;
+  }
+  
+  ul {
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #e7f1ff;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
