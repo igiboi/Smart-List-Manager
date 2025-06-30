@@ -24,3 +24,23 @@ function addToEnd() {
     renderList(); // Update the HTML list
   }
 }
+
+function addToStart() {
+    const value = itemInput.value.trim();
+
+    if (value) {
+        myList.unshift(value); // Add to the start of array
+        itemInput.value = ''; // Clear the input field in the UI
+        renderList(); // Update HTML list
+    }
+}
+
+function removeFromStart() {
+    myList.shift();
+    renderList();
+}
+
+function removeFromEnd() {
+    myList.pop();
+    renderList();
+}
